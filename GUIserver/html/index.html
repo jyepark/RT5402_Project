@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta name="viewport"content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+    <script src="/script.js" defer></script>
+    <title>OrderPage</title>
+</head>
+
+<body>
+    <h2>Table number</h2>
+    <select type="text" id="table">
+        <option selected>Choose </option>
+        <option value="table1">1</option>
+        <option value="table2">2</option>
+        <option value="table3">3</option>
+        <option value="table4">4</option>
+        <option value="table5">5</option>
+        <option value="table6">6</option>
+    </select>
+
+    <hr>
+    <h2>Order</h2>
+
+    <p>Menu
+    <select type="text" id="menu">
+        <option selected>Choose One</option>
+        <option value="menu1">menu1</option>
+        <option value="menu2">menu2</option>
+        <option value="menu3">menu3</option>
+    </select>
+    </p>
+
+    <button id = "publish" onClick="publish()">Order</button>
+
+    <hr>
+    <h2>Return</h2>
+    <p id="table"> Check the Table number!</p>
+    <button id = "return" onClick="return_dish()">Return</button>
+
+    <hr>
+    <h2>Order information</h2>
+    <p id="subscribe"></p>
+    <p id="subscribe2"></p>
+
+</body>
+</html>
